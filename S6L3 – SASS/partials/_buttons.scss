@@ -1,0 +1,17 @@
+@mixin button ($bgColor) {
+    height: 60px;
+    width: 140px;
+    background-color: $bgColor;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+    font-size: $l;
+    &:hover {
+        border-color: 1px solid $bgColor;
+        background-color: #f4f4f4;
+        transform: scale(1.2);
+        color:#1d1d1f ;
+    }
+}
+

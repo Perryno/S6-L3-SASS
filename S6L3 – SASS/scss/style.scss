@@ -1,0 +1,46 @@
+@import "../partials/reset";
+@import "../partials/animations";
+@import "../partials/buttons";
+@import "../partials/colors";
+@import "../partials/fonts";
+@import "../partials/immagini";
+@import "../partials/misc";
+@import "../partials/spacing";
+
+.blu {
+    @include button(#0e6cff)
+}
+
+.arancio {
+    @include button(#ff8700)
+}
+.verde {
+    @include button(#4caf50)
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  .hero {
+
+    animation: fade-in 1s ease-out;
+    display: flex;
+    img {
+      height: 80px;
+   
+    }
+    
+    
+  }
+  
+  
+      
